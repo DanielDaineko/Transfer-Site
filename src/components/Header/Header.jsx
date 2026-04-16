@@ -11,6 +11,7 @@ function Header() {
         <nav className="nav">
           <a href="#services">Услуги</a>
           <a href="#routes">Маршруты</a>
+          <a href="#map">Карта</a>
           <a href="#contacts">Контакты</a>
         </nav>
 
