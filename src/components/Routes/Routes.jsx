@@ -11,7 +11,7 @@ function Routes() {
           {routesData.map((route, index) => (
             <div className="route-card" key={index}>
               <h3>
-                {route.from} — {route.to}
+                {route.from} - {route.to}
               </h3>
               <p>Время: {route.time}</p>
               <p>Расстояние: {route.distance}</p>
