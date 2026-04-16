@@ -1,0 +1,40 @@
+.routes {
+  background: var(--bg);
+}
+
+.routes__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.route-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: var(--shadow);
+}
+
+.route-card h3 {
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+.route-card p {
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.route-card__price {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 18px;
+}
+
+@media (max-width: 900px) {
+  .routes__list {
+    grid-template-columns: 1fr;
+  }
+}
