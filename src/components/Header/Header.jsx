@@ -101,7 +101,7 @@ function Header() {
               }
               onClick={() => changeLanguage("en")}
             >
-              🇬🇧
+              EN
             </button>
           </div>
 
