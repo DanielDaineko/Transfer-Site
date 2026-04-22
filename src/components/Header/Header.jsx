@@ -18,10 +18,18 @@ function Header() {
           <a href="#contacts">Контакты</a>
         </nav>
 
-        <a href="tel:+37258141777" className="header__phone">
-          <FaPhoneAlt />
-          <span>+372 5814 1777</span>
-        </a>
+        <div className="header__right">
+          <div className="lang">
+            <img src="/images/ee.png" alt="EE" />
+            <img src="/images/ru.png" alt="RU" />
+            <img src="/images/gb.png" alt="EN" />
+          </div>
+
+          <a href="tel:+37258141777" className="header__phone">
+            <FaPhoneAlt />
+            <span>+372 5814 1777</span>
+          </a>
+        </div>
       </div>
     </header>
   );

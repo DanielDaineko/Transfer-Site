@@ -30,7 +30,11 @@ img {
 }
 
 section {
-  padding: 90px 20px;
+  padding: 70px 20px;
+}
+
+#hero {
+  padding-top: 0;
 }
 
 .container {
