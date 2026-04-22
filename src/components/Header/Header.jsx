@@ -5,7 +5,7 @@ function Header() {
     <header className="header">
       <div className="container header__container">
         <a href="#hero" className="logo">
-          EstoniaTransfer
+          EstoniaTransfer.ee
         </a>
 
         <nav className="nav">
@@ -16,7 +16,7 @@ function Header() {
         </nav>
 
         <a href="tel:+37253874330" className="header__phone">
-          +372 5387 4330
+          +372 5814 1777
         </a>
       </div>
     </header>
