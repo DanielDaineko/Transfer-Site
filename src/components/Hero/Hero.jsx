@@ -1,5 +1,10 @@
 import "./Hero.css";
-import { FaWhatsapp, FaTelegramPlane, FaPhoneAlt } from "react-icons/fa";
+import {
+  FaWhatsapp,
+  FaTelegramPlane,
+  FaPhoneAlt,
+  FaArrowRight,
+} from "react-icons/fa";
 
 function Hero() {
   return (
@@ -8,7 +13,13 @@ function Hero() {
         <div className="hero__content">
           <p className="hero__subtitle">Трансфер по Эстонии</p>
 
-          <h1 className="hero__title">Трансфер в любую точку Эстонии</h1>
+          <h1 className="hero__title">
+            Трансфер в
+            <br />
+            любую точку
+            <br />
+            Эстонии
+          </h1>
 
           <p className="hero__text">
             Комфортные автомобили, фиксированные цены и высокий уровень сервиса
@@ -22,7 +33,8 @@ function Hero() {
             </a>
 
             <a href="#routes" className="btn btn--secondary">
-              Смотреть маршруты
+              <span>Смотреть маршруты</span>
+              <FaArrowRight />
             </a>
           </div>
 
@@ -55,8 +67,15 @@ function Hero() {
           </div>
         </div>
 
-        <div className="hero__image">
-          <img src="/images/car2.png" alt="Toyota Corolla" />
+        <div className="hero__visual">
+          <div className="hero__glow"></div>
+          <div className="hero__car-wrap">
+            <img
+              src="/images/car2.png"
+              alt="Toyota Corolla"
+              className="hero__car"
+            />
+          </div>
         </div>
       </div>
     </section>

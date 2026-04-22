@@ -1,5 +1,5 @@
 .routes {
-  background: var(--bg);
+  background: linear-gradient(180deg, #06101f 0%, #030712 100%);
 }
 
 .routes__list {
@@ -9,31 +9,55 @@
 }
 
 .route-card {
-  background: var(--card);
+  background: rgba(15, 23, 42, 0.82);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border-radius: 24px;
   padding: 28px;
   box-shadow: var(--shadow);
+  transition: 0.25s ease;
+}
+
+.route-card:hover {
+  transform: translateY(-4px);
 }
 
 .route-card h3 {
-  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
   font-size: 24px;
+  color: white;
 }
 
-.route-card p {
+.route-card h3 svg {
+  color: #60a5fa;
+}
+
+.route-card__meta {
+  display: grid;
+  gap: 14px;
+}
+
+.route-card__meta p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   color: var(--text-muted);
-  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.route-card__meta svg {
+  color: #60a5fa;
 }
 
 .route-card__price {
-  color: white;
+  color: white !important;
   font-weight: 700;
-  font-size: 20px;
-  margin-top: 18px;
+  font-size: 19px !important;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 980px) {
   .routes__list {
     grid-template-columns: 1fr;
   }
