@@ -12,6 +12,11 @@ function Hero() {
 
   return (
     <section id="hero" className="hero">
+      <div className="hero__bg">
+        <img src="/images/bg-aurora.png" alt="" />
+        <div className="hero__overlay"></div>
+      </div>
+
       <div className="container hero__container">
         <div className="hero__content">
           <p className="hero__subtitle">{t("hero.subtitle")}</p>
@@ -66,14 +71,12 @@ function Hero() {
         </div>
 
         <div className="hero__visual">
-          <div className="hero__glow"></div>
-          <div className="hero__car-wrap">
-            <img
-              src="/images/car2.png"
-              alt="Toyota Corolla"
-              className="hero__car"
-            />
-          </div>
+          <div className="hero__car-shadow"></div>
+          <img
+            src="/images/car.png"
+            alt="Toyota Corolla"
+            className="hero__car"
+          />
         </div>
       </div>
     </section>

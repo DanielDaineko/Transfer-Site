@@ -47,7 +47,7 @@ function Header() {
                 }
                 onClick={() => changeLanguage("et")}
               >
-                🇪🇪 ET
+                ET
               </button>
               <button
                 className={
@@ -55,7 +55,7 @@ function Header() {
                 }
                 onClick={() => changeLanguage("ru")}
               >
-                🇷🇺 RU
+                RU
               </button>
               <button
                 className={
@@ -63,7 +63,7 @@ function Header() {
                 }
                 onClick={() => changeLanguage("en")}
               >
-                en EN
+                EN
               </button>
             </div>
 
