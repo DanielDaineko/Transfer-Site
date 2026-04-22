@@ -5,15 +5,16 @@ import {
   FaWhatsapp,
   FaTelegramPlane,
 } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 function Contacts() {
+  const { t } = useTranslation();
+
   return (
     <section id="contacts" className="contacts">
       <div className="container">
-        <h2 className="section-title">Контакты</h2>
-        <p className="section-subtitle">
-          Свяжитесь с нами удобным способом и забронируйте поездку.
-        </p>
+        <h2 className="section-title">{t("contacts.title")}</h2>
+        <p className="section-subtitle">{t("contacts.subtitle")}</p>
 
         <div className="contacts__card">
           <div className="contacts__item">

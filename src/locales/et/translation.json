@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "home": "Avaleht",
+    "services": "Teenused",
+    "routes": "Marsruudid",
+    "map": "Kaart",
+    "contacts": "Kontakt"
+  },
+  "hero": {
+    "subtitle": "Transfeer üle Eesti",
+    "title1": "Transfeer",
+    "title2": "ükskõik millisesse",
+    "title3": "Eesti punkti",
+    "text": "Mugavad autod, fikseeritud hinnad ja kõrge teenindustase teie mugavuse jaoks.",
+    "book": "Broneeri sõit",
+    "routes": "Vaata marsruute",
+    "messengers": "Võta meiega ühendust sõnumirakendustes"
+  },
+  "services": {
+    "title": "Meie teenused",
+    "subtitle": "Mugavus ja usaldusväärsus igas sõidus. Teeme transfeeri lihtsaks, arusaadavaks ja mugavaks.",
+    "items": {
+      "1": {
+        "title": "Mugavad autod",
+        "text": "Kaasaegsed ja puhtad autod võimalikult mugavaks sõiduks."
+      },
+      "2": {
+        "title": "Fikseeritud hinnad",
+        "text": "Te teate sõidu maksumust ette, ilma varjatud lisatasudeta."
+      },
+      "3": {
+        "title": "Alati õigel ajal",
+        "text": "Hindame teie aega ja garanteerime auto õigeaegse saabumise."
+      }
+    }
+  },
+  "routes": {
+    "title": "Populaarsed marsruudid",
+    "subtitle": "Peamised sihtkohad selge hinna ja ligikaudse sõiduajaga.",
+    "from": "alates"
+  },
+  "mapSection": {
+    "title": "Sõitude kaart",
+    "subtitle": "Pakume transfeere üle kogu Eesti ja populaarsetesse sihtkohtadesse.",
+    "card1Title": "Töötame üle Eesti",
+    "card1Text": "Tallinn, Narva, Koidula, Luhamaa ja muud sihtkohad.",
+    "card2Title": "Individuaalsed marsruudid",
+    "card2Text": "Saate kokku leppida transfeeri teile sobivasse sihtkohta."
+  },
+  "contacts": {
+    "title": "Kontaktid",
+    "subtitle": "Võtke meiega ühendust teile sobival viisil ja broneerige sõit."
+  }
+}

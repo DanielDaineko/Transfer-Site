@@ -1,16 +1,16 @@
 import "./Routes.css";
 import { routesData } from "../../data/routesData";
 import { FaRoute, FaClock, FaRoad, FaEuroSign } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 function Routes() {
+  const { t } = useTranslation();
+
   return (
     <section id="routes" className="routes">
       <div className="container">
-        <h2 className="section-title">Популярные маршруты</h2>
-        <p className="section-subtitle">
-          Основные направления с понятной стоимостью и ориентировочным временем
-          в пути.
-        </p>
+        <h2 className="section-title">{t("routes.title")}</h2>
+        <p className="section-subtitle">{t("routes.subtitle")}</p>
 
         <div className="routes__list">
           {routesData.map((route, index) => (
@@ -35,7 +35,9 @@ function Routes() {
 
                 <p className="route-card__price">
                   <FaEuroSign />
-                  <span>от {route.price}</span>
+                  <span>
+                    {t("routes.from")} {route.price}
+                  </span>
                 </p>
               </div>
             </article>

@@ -1,33 +1,33 @@
 import "./Services.css";
 import { FaCarSide, FaShieldAlt, FaClock } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 function Services() {
+  const { t } = useTranslation();
+
   const services = [
     {
       icon: <FaCarSide />,
-      title: "Комфортные автомобили",
-      text: "Современные и чистые автомобили для максимально комфортной поездки.",
+      title: t("services.items.1.title"),
+      text: t("services.items.1.text"),
     },
     {
       icon: <FaShieldAlt />,
-      title: "Фиксированные цены",
-      text: "Вы заранее знаете стоимость поездки, никаких скрытых доплат.",
+      title: t("services.items.2.title"),
+      text: t("services.items.2.text"),
     },
     {
       icon: <FaClock />,
-      title: "Точно в срок",
-      text: "Мы ценим ваше время и гарантируем подачу автомобиля вовремя.",
+      title: t("services.items.3.title"),
+      text: t("services.items.3.text"),
     },
   ];
 
   return (
     <section id="services" className="services">
       <div className="container">
-        <h2 className="section-title">Наши услуги</h2>
-        <p className="section-subtitle">
-          Комфорт и надёжность в каждой поездке. Мы делаем трансфер простым,
-          понятным и удобным.
-        </p>
+        <h2 className="section-title">{t("services.title")}</h2>
+        <p className="section-subtitle">{t("services.subtitle")}</p>
 
         <div className="services__grid">
           {services.map((item, index) => (

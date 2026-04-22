@@ -1,32 +1,31 @@
 import "./MapSection.css";
 import { FaMapMarkedAlt, FaLocationArrow } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 function MapSection() {
+  const { t } = useTranslation();
+
   return (
     <section className="map-section" id="map">
       <div className="container">
-        <h2 className="section-title">Карта поездок</h2>
-        <p className="section-subtitle">
-          Выполняем трансферы по всей Эстонии и в популярные направления.
-        </p>
+        <h2 className="section-title">{t("mapSection.title")}</h2>
+        <p className="section-subtitle">{t("mapSection.subtitle")}</p>
 
         <div className="map-section__grid">
           <div className="map-section__info">
             <div className="map-info-card">
               <FaMapMarkedAlt />
               <div>
-                <h3>Работаем по всей Эстонии</h3>
-                <p>Таллин, Нарва, Койдула, Лухамаа и другие направления.</p>
+                <h3>{t("mapSection.card1Title")}</h3>
+                <p>{t("mapSection.card1Text")}</p>
               </div>
             </div>
 
             <div className="map-info-card">
               <FaLocationArrow />
               <div>
-                <h3>Индивидуальные маршруты</h3>
-                <p>
-                  Можно согласовать трансфер под нужную вам точку назначения.
-                </p>
+                <h3>{t("mapSection.card2Title")}</h3>
+                <p>{t("mapSection.card2Text")}</p>
               </div>
             </div>
           </div>
