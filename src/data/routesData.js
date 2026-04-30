@@ -22,9 +22,9 @@ export const routesData = [
   },
   {
     from: "Tallinn",
-    to: "Saint Petersburg",
-    time: "8ч",
-    distance: "620 км",
-    price: "300€",
+    to: "Tartu",
+    time: "2ч",
+    distance: "180 км",
+    price: "110€",
   },
 ];

@@ -40,24 +40,6 @@ function Hero() {
               <FaArrowRight />
             </a>
           </div>
-
-          <p className="hero__messenger-title">{t("hero.messengers")}</p>
-
-          <div className="hero__messengers">
-            <a
-              href="Https://wa.me/37258141777"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaWhatsapp />
-              WhatsApp
-            </a>
-
-            <a href="https://t.me/Semkopli82" target="_blank" rel="noreferrer">
-              <FaTelegramPlane />
-              Telegram
-            </a>
-          </div>
         </div>
       </div>
     </section>
