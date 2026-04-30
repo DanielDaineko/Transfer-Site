@@ -1,5 +1,5 @@
 import "./Services.css";
-import { FaCarSide, FaShieldAlt, FaClock } from "react-icons/fa";
+import { FaCarSide, FaShieldAlt, FaClock, FaGem } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
 function Services() {
@@ -20,6 +20,11 @@ function Services() {
       icon: <FaClock />,
       title: t("services.items.3.title"),
       text: t("services.items.3.text"),
+    },
+    {
+      icon: <FaGem />,
+      title: t("services.items.4.title"),
+      text: t("services.items.4.text"),
     },
   ];
 

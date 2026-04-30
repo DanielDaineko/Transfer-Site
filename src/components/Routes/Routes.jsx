@@ -1,6 +1,6 @@
 import "./Routes.css";
+import { FaClock, FaRoad, FaEuroSign, FaArrowRight } from "react-icons/fa";
 import { routesData } from "../../data/routesData";
-import { FaRoute, FaClock, FaRoad, FaEuroSign } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
 function Routes() {
@@ -12,33 +12,32 @@ function Routes() {
         <h2 className="section-title">{t("routes.title")}</h2>
         <p className="section-subtitle">{t("routes.subtitle")}</p>
 
-        <div className="routes__list">
+        <div className="routes__grid">
           {routesData.map((route, index) => (
             <article className="route-card" key={index}>
-              <h3>
-                <FaRoute />
-                <span>
+              <div>
+                <h3>
                   {route.from} - {route.to}
-                </span>
-              </h3>
+                </h3>
 
-              <div className="route-card__meta">
-                <p>
-                  <FaClock />
-                  <span>{route.time}</span>
-                </p>
-
-                <p>
-                  <FaRoad />
-                  <span>{route.distance}</span>
-                </p>
+                <div className="route-card__meta">
+                  <span>
+                    <FaClock /> {route.time}
+                  </span>
+                  <span>
+                    <FaRoad /> {route.distance}
+                  </span>
+                </div>
 
                 <p className="route-card__price">
                   <FaEuroSign />
-                  <span>
-                    {t("routes.from")} {route.price}
-                  </span>
+                  {t("routes.from")} {route.price}
                 </p>
+              </div>
+
+              <div className="route-card__map">
+                <span></span>
+                <FaArrowRight />
               </div>
             </article>
           ))}

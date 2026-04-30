@@ -18,8 +18,12 @@ function Header() {
     <header className="header">
       <div className="container header__container">
         <a href="#hero" className="logo" onClick={closeMenu}>
-          <span className="logo__icon">ET</span>
-          <span>EuroTransfer.ee</span>
+          <span className="logo__letters">ET</span>
+          <span className="logo__text">
+            EURO
+            <br />
+            TRANSFER
+          </span>
         </a>
 
         <nav className={`nav ${menuOpen ? "nav--open" : ""}`}>
@@ -38,71 +42,13 @@ function Header() {
           <a href="#contacts" onClick={closeMenu}>
             {t("nav.contacts")}
           </a>
-
-          <div className="header__mobile-extras">
-            <div className="lang-switcher">
-              <button
-                className={
-                  i18n.language === "et" ? "lang-btn active" : "lang-btn"
-                }
-                onClick={() => changeLanguage("et")}
-              >
-                ET
-              </button>
-              <button
-                className={
-                  i18n.language === "ru" ? "lang-btn active" : "lang-btn"
-                }
-                onClick={() => changeLanguage("ru")}
-              >
-                RU
-              </button>
-              <button
-                className={
-                  i18n.language === "en" ? "lang-btn active" : "lang-btn"
-                }
-                onClick={() => changeLanguage("en")}
-              >
-                EN
-              </button>
-            </div>
-
-            <a
-              href="tel:+37258141777"
-              className="header__phone header__phone--mobile"
-            >
-              <FaPhoneAlt />
-              <span>+372 5814 1777</span>
-            </a>
-          </div>
         </nav>
 
         <div className="header__right">
-          <div className="lang-switcher header__lang-desktop">
-            <button
-              className={
-                i18n.language === "et" ? "lang-btn active" : "lang-btn"
-              }
-              onClick={() => changeLanguage("et")}
-            >
-              EE
-            </button>
-            <button
-              className={
-                i18n.language === "ru" ? "lang-btn active" : "lang-btn"
-              }
-              onClick={() => changeLanguage("ru")}
-            >
-              RU
-            </button>
-            <button
-              className={
-                i18n.language === "en" ? "lang-btn active" : "lang-btn"
-              }
-              onClick={() => changeLanguage("en")}
-            >
-              EN
-            </button>
+          <div className="lang">
+            <button onClick={() => changeLanguage("et")}>EE</button>
+            <button onClick={() => changeLanguage("ru")}>RU</button>
+            <button onClick={() => changeLanguage("en")}>EN</button>
           </div>
 
           <a href="tel:+37258141777" className="header__phone">
@@ -110,11 +56,7 @@ function Header() {
             <span>+372 5814 1777</span>
           </a>
 
-          <button
-            className="burger"
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="menu"
-          >
+          <button className="burger" onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <FaTimes /> : <FaBars />}
           </button>
         </div>

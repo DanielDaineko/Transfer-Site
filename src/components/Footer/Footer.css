@@ -1,7 +1,32 @@
 .footer {
-  padding: 26px 20px;
-  text-align: center;
-  color: var(--text-muted);
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  background: #030712;
+  padding: 34px 20px;
+  border-top: 1px solid var(--border);
+  background: #05080f;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--muted);
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--gold);
+  font-family: Georgia, serif;
+}
+
+.footer__logo span {
+  font-size: 34px;
+}
+
+@media (max-width: 700px) {
+  .footer__container {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
 }

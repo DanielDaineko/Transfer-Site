@@ -1,64 +1,84 @@
 .routes {
-  background: linear-gradient(180deg, #06101f 0%, #030712 100%);
+  background: #05080f;
 }
 
-.routes__list {
+.routes__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+  gap: 22px;
 }
 
 .route-card {
-  background: rgba(15, 23, 42, 0.82);
+  min-height: 150px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 26px;
+  border-radius: var(--radius);
   border: 1px solid var(--border);
-  border-radius: 24px;
-  padding: 28px;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.055),
+    rgba(255, 255, 255, 0.015)
+  );
   box-shadow: var(--shadow);
-  transition: 0.25s ease;
-}
-
-.route-card:hover {
-  transform: translateY(-4px);
 }
 
 .route-card h3 {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 22px;
   font-size: 24px;
-  color: white;
-}
-
-.route-card h3 svg {
-  color: #60a5fa;
+  margin-bottom: 18px;
 }
 
 .route-card__meta {
-  display: grid;
-  gap: 14px;
-}
-
-.route-card__meta p {
   display: flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--text-muted);
-  font-size: 17px;
+  gap: 22px;
+  color: var(--muted);
+  margin-bottom: 18px;
 }
 
-.route-card__meta svg {
-  color: #60a5fa;
+.route-card__meta span,
+.route-card__price {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.route-card svg {
+  color: var(--gold);
 }
 
 .route-card__price {
-  color: white !important;
-  font-weight: 700;
-  font-size: 19px !important;
+  color: var(--gold);
+  font-weight: 800;
+  font-size: 20px;
 }
 
-@media (max-width: 980px) {
-  .routes__list {
+.route-card__map {
+  width: 190px;
+  opacity: 0.65;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.route-card__map span {
+  width: 130px;
+  height: 80px;
+  background:
+    radial-gradient(circle, var(--gold) 2px, transparent 3px),
+    linear-gradient(135deg, transparent 45%, var(--gold) 46%, transparent 48%);
+  background-size:
+    40px 40px,
+    100% 100%;
+  opacity: 0.7;
+}
+
+@media (max-width: 900px) {
+  .routes__grid {
     grid-template-columns: 1fr;
+  }
+
+  .route-card__map {
+    display: none;
   }
 }

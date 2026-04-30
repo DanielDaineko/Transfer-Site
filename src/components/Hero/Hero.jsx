@@ -12,71 +12,52 @@ function Hero() {
 
   return (
     <section id="hero" className="hero">
-      <div className="hero__bg">
-        <img src="/images/bg-aurora.png" alt="" />
-        <div className="hero__overlay"></div>
-      </div>
+      <div className="hero__bg"></div>
+      <div className="hero__overlay"></div>
 
       <div className="container hero__container">
         <div className="hero__content">
           <p className="hero__subtitle">{t("hero.subtitle")}</p>
 
-          <h1 className="hero__title">
+          <h1>
             {t("hero.title1")}
             <br />
             {t("hero.title2")}
             <br />
-            {t("hero.title3")}
+            <span>{t("hero.title3")}</span>
           </h1>
 
           <p className="hero__text">{t("hero.text")}</p>
 
           <div className="hero__buttons">
-            <a href="#contacts" className="btn btn--primary">
+            <a href="#contacts" className="btn btn--gold">
               <FaPhoneAlt />
-              <span>{t("hero.book")}</span>
+              {t("hero.book")}
             </a>
 
-            <a href="#routes" className="btn btn--secondary">
-              <span>{t("hero.routes")}</span>
+            <a href="#routes" className="btn btn--dark">
+              {t("hero.routes")}
               <FaArrowRight />
             </a>
           </div>
 
+          <p className="hero__messenger-title">{t("hero.messengers")}</p>
+
           <div className="hero__messengers">
-            <p className="hero__messengers-text">{t("hero.messengers")}</p>
+            <a
+              href="Https://wa.me/37258141777"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaWhatsapp />
+              WhatsApp
+            </a>
 
-            <div className="hero__messengers-links">
-              <a
-                href="Https://wa.me/37258141777"
-                target="_blank"
-                rel="noreferrer"
-                className="messenger messenger--whatsapp"
-              >
-                <FaWhatsapp />
-                <span>WhatsApp</span>
-              </a>
-
-              <a
-                href="https://t.me/Semkopli82"
-                target="_blank"
-                rel="noreferrer"
-                className="messenger messenger--telegram"
-              >
-                <FaTelegramPlane />
-                <span>Telegram</span>
-              </a>
-            </div>
+            <a href="https://t.me/Semkopli82" target="_blank" rel="noreferrer">
+              <FaTelegramPlane />
+              Telegram
+            </a>
           </div>
-        </div>
-
-        <div className="hero__visual">
-          <div className="hero__car-shadow"></div>
-          <img
-            src="/images/car.png"
-            alt="Toyota Corolla"
-            className="hero__car"
-          />
         </div>
       </div>
     </section>
