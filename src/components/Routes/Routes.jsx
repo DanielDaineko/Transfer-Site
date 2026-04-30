@@ -18,7 +18,7 @@ function Routes() {
               <h3>
                 <FaRoute />
                 <span>
-                  {route.from} — {route.to}
+                  {route.from} - {route.to}
                 </span>
               </h3>
 

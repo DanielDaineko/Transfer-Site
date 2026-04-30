@@ -18,8 +18,8 @@ function Header() {
     <header className="header">
       <div className="container header__container">
         <a href="#hero" className="logo" onClick={closeMenu}>
-          <span className="logo__icon">E</span>
-          <span>EstoniaTransfer.ee</span>
+          <span className="logo__icon">ET</span>
+          <span>EuroTransfer.ee</span>
         </a>
 
         <nav className={`nav ${menuOpen ? "nav--open" : ""}`}>
