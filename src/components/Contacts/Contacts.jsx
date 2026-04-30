@@ -29,7 +29,7 @@ function Contacts() {
 
           <div className="contacts__socials">
             <a
-              href="https://wa.me/37258141777"
+              href="Https://wa.me/37258141777"
               target="_blank"
               rel="noreferrer"
               className="contacts__social contacts__social--whatsapp"
@@ -39,7 +39,7 @@ function Contacts() {
             </a>
 
             <a
-              href="https://t.me/your_telegram_username"
+              href="https://t.me/Semkopli82"
               target="_blank"
               rel="noreferrer"
               className="contacts__social contacts__social--telegram"
