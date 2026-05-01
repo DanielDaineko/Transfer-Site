@@ -53,6 +53,12 @@
   },
   "contacts": {
     "title": "Contacts",
-    "subtitle": "Contact us in a convenient way and book your trip."
+    "phoneRu": "Russian language",
+    "phoneEnEt": "English / Estonian",
+    "email": "Email"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "company": "Services provided by Aletakso OÜ | Reg. code: 12345678"
   }
 }

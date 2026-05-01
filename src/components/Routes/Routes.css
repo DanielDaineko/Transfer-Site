@@ -1,5 +1,7 @@
 .routes {
-  background: var(--bg);
+  background:
+    radial-gradient(circle at top, rgba(214, 177, 106, 0.08), transparent 36%),
+    var(--bg);
 }
 
 .routes__grid {

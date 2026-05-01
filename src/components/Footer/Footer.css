@@ -1,7 +1,9 @@
 .footer {
   padding: 34px 20px;
   border-top: 1px solid var(--border);
-  background: var(--bg);
+  background:
+    radial-gradient(circle at top, rgba(214, 177, 106, 0.08), transparent 36%),
+    var(--bg);
 }
 
 .footer__container {

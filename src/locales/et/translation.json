@@ -53,6 +53,12 @@
   },
   "contacts": {
     "title": "Kontaktid",
-    "subtitle": "Võtke meiega ühendust teile sobival viisil ja broneerige sõit."
+    "phoneRu": "Vene keel",
+    "phoneEnEt": "Inglise / Eesti",
+    "email": "E-post"
+  },
+  "footer": {
+    "rights": "Kõik õigused kaitstud",
+    "company": "Teenust osutab Aletakso OÜ | Reg. kood: 12345678"
   }
 }

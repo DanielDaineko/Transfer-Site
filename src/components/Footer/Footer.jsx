@@ -1,6 +1,9 @@
 import "./Footer.css";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="footer">
       <div className="container footer__container">
@@ -15,8 +18,8 @@ function Footer() {
 
         <div className="footer__info">
           <p>© 2026 EuroTransfer</p>
-          <p>Все права защищены</p>
-          <p className="footer__company">Aletakso OÜ | Рег. код: 12345678</p>
+          <p>{t("footer.rights")}</p>
+          <p className="footer__company">{t("footer.company")}</p>
         </div>
       </div>
     </footer>

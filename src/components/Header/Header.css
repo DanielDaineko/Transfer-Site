@@ -14,7 +14,9 @@
   justify-content: space-between;
   border: 1px solid var(--border);
   border-radius: 18px;
-  background: var(--bg);
+  background:
+    radial-gradient(circle at top, rgba(214, 177, 106, 0.08), transparent 36%),
+    var(--bg);
   backdrop-filter: blur(16px);
 }
 
