@@ -159,3 +159,26 @@
     flex-direction: column;
   }
 }
+@media (max-width: 520px) {
+  .hero {
+    padding: 130px 20px 70px;
+    min-height: 680px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero__subtitle {
+    font-size: 16px;
+  }
+
+  .hero__text {
+    font-size: 16px;
+  }
+
+  .hero__buttons,
+  .hero__messengers {
+    flex-direction: column;
+  }
+}

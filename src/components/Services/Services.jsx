@@ -29,14 +29,14 @@ function Services() {
   ];
 
   return (
-    <section id="services" className="services">
+    <section id="services" className="services reveal">
       <div className="container">
         <h2 className="section-title">{t("services.title")}</h2>
         <p className="section-subtitle">{t("services.subtitle")}</p>
 
         <div className="services__grid">
           {services.map((item, index) => (
-            <article className="service-card" key={index}>
+            <article className="service-card reveal" key={index}>
               <div className="service-card__icon">{item.icon}</div>
               <h3>{item.title}</h3>
               <p>{item.text}</p>

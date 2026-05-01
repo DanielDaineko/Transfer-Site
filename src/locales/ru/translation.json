@@ -43,6 +43,28 @@
     "subtitle": "Основные направления с понятной стоимостью и ориентировочным временем в пути.",
     "from": "от"
   },
+  "routesData": {
+    "tallinn": "Tallinn",
+    "narva": "Narva",
+    "koidula": "Koidula",
+    "luhamaa": "Luhamaa",
+    "tartu": "Tartu",
+    "cityRide": "Поездка по городу",
+    "thirtyMinutes": "30 минут",
+    "oneHour": "1 час",
+    "driverBooking": "Водитель",
+    "twelveHours": "12 часов",
+    "cityService": "городская поездка",
+    "personalService": "индивидуальный сервис",
+    "timeNarva": "2ч 30м",
+    "timeKoidula": "3ч 05м",
+    "timeLuhamaa": "3ч 10м",
+    "timeTartu": "2ч",
+    "distanceNarva": "210 км",
+    "distanceKoidula": "270 км",
+    "distanceLuhamaa": "280 км",
+    "distanceTartu": "180 км"
+  },
   "mapSection": {
     "title": "Карта поездок",
     "subtitle": "Выполняем трансферы по всей Эстонии и в популярные направления.",

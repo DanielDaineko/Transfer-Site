@@ -106,3 +106,17 @@
     flex-wrap: wrap;
   }
 }
+@media (max-width: 520px) {
+  .route-card {
+    padding: 22px;
+  }
+
+  .route-card h3 {
+    font-size: 20px;
+  }
+
+  .route-card__meta {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

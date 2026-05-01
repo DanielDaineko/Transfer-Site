@@ -40,8 +40,30 @@
   },
   "routes": {
     "title": "Populaarsed marsruudid",
-    "subtitle": "Peamised sihtkohad selge hinna ja ligikaudse sõiduajaga.",
+    "subtitle": "Peamised sihtkohad selge hinnaga ja ligikaudse sõiduajaga.",
     "from": "alates"
+  },
+  "routesData": {
+    "tallinn": "Tallinn",
+    "narva": "Narva",
+    "koidula": "Koidula",
+    "luhamaa": "Luhamaa",
+    "tartu": "Tartu",
+    "cityRide": "Linnasõit",
+    "thirtyMinutes": "30 minutit",
+    "oneHour": "1 tund",
+    "driverBooking": "Juhi broneerimine",
+    "twelveHours": "12 tundi",
+    "cityService": "linnasisene sõit",
+    "personalService": "personaalne teenus",
+    "timeNarva": "2h 30m",
+    "timeKoidula": "3h 05m",
+    "timeLuhamaa": "3h 10m",
+    "timeTartu": "2h",
+    "distanceNarva": "210 km",
+    "distanceKoidula": "270 km",
+    "distanceLuhamaa": "280 km",
+    "distanceTartu": "180 km"
   },
   "mapSection": {
     "title": "Sõitude kaart",

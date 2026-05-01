@@ -12,7 +12,7 @@ function MapSection() {
   const { t } = useTranslation();
 
   return (
-    <section id="map" className="map-section">
+    <section id="map" className="map-section reveal">
       <div className="container map-section__grid">
         <div className="map-info">
           <h2>{t("mapSection.title")}</h2>

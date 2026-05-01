@@ -5,8 +5,11 @@ import Services from "./components/Services/Services";
 import Routes from "./components/Routes/Routes";
 import MapSection from "./components/MapSection/MapSection";
 import Footer from "./components/Footer/Footer";
+import { useScrollReveal } from "./hooks/useScrollReveal";
 
 function App() {
+  useScrollReveal();
+
   return (
     <>
       <Header />

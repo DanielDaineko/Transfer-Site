@@ -131,3 +131,22 @@
     height: 360px;
   }
 }
+@media (max-width: 520px) {
+  .map-info,
+  .contact-card {
+    padding: 22px;
+  }
+
+  .map-info h2,
+  .contact-card h2 {
+    font-size: 26px;
+  }
+
+  .contact-card__buttons {
+    flex-direction: column;
+  }
+
+  .contact-card__buttons a {
+    justify-content: center;
+  }
+}

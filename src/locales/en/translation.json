@@ -38,10 +38,34 @@
       }
     }
   },
+
   "routes": {
     "title": "Popular routes",
-    "subtitle": "Main destinations with transparent pricing and estimated travel time.",
+    "subtitle": "Main destinations with clear pricing and estimated travel time.",
     "from": "from"
+  },
+
+  "routesData": {
+    "tallinn": "Tallinn",
+    "narva": "Narva",
+    "koidula": "Koidula",
+    "luhamaa": "Luhamaa",
+    "tartu": "Tartu",
+    "cityRide": "City ride",
+    "thirtyMinutes": "30 minutes",
+    "oneHour": "1 hour",
+    "driverBooking": "Driver booking",
+    "twelveHours": "12 hours",
+    "cityService": "city service",
+    "personalService": "personal service",
+    "timeNarva": "2h 30m",
+    "timeKoidula": "3h 05m",
+    "timeLuhamaa": "3h 10m",
+    "timeTartu": "2h",
+    "distanceNarva": "210 km",
+    "distanceKoidula": "270 km",
+    "distanceLuhamaa": "280 km",
+    "distanceTartu": "180 km"
   },
   "mapSection": {
     "title": "Trip map",

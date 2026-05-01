@@ -111,3 +111,33 @@ section {
     font-size: 16px;
   }
 }
+.reveal {
+  opacity: 0;
+  transform: translateY(34px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.reveal--active {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-subtitle {
+    font-size: 15px;
+    margin-bottom: 32px;
+  }
+}

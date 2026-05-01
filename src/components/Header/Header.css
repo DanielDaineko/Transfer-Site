@@ -171,3 +171,24 @@
     font-size: 12px;
   }
 }
+@media (max-width: 620px) {
+  .header {
+    top: 8px;
+  }
+
+  .header__container {
+    border-radius: 14px;
+  }
+
+  .logo__letters {
+    font-size: 30px;
+  }
+
+  .logo__text {
+    font-size: 11px;
+  }
+
+  .lang {
+    display: none;
+  }
+}

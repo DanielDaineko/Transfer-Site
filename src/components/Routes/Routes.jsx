@@ -7,25 +7,28 @@ function Routes() {
   const { t } = useTranslation();
 
   return (
-    <section id="routes" className="routes">
+    <section id="routes" className="routes reveal">
       <div className="container">
         <h2 className="section-title">{t("routes.title")}</h2>
         <p className="section-subtitle">{t("routes.subtitle")}</p>
 
         <div className="routes__grid">
           {routesData.map((route, index) => (
-            <article className="route-card" key={index}>
+            <article className="route-card reveal" key={index}>
               <div>
                 <h3>
-                  {route.from} - {route.to}
+                  {t(route.fromKey)} — {t(route.toKey)}
                 </h3>
 
                 <div className="route-card__meta">
                   <span>
-                    <FaClock /> {route.time}
+                    <FaClock />
+                    {t(route.timeKey)}
                   </span>
+
                   <span>
-                    <FaRoad /> {route.distance}
+                    <FaRoad />
+                    {t(route.distanceKey)}
                   </span>
                 </div>
 
