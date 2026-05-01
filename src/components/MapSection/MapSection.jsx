@@ -77,11 +77,7 @@ function MapSection() {
               WhatsApp
             </a>
 
-            <a
-              href="https://t.me/your_telegram_username"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://t.me/Semkopli82" target="_blank" rel="noreferrer">
               <FaTelegramPlane />
               Telegram
             </a>
