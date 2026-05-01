@@ -8,6 +8,20 @@
   gap: 22px;
 }
 
+.route-card:last-child {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 900px) {
+  .routes__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .route-card:last-child {
+    grid-column: auto;
+  }
+}
+
 .route-card {
   min-height: 150px;
   display: flex;
