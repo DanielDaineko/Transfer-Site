@@ -6,7 +6,7 @@ function Footer() {
 
   return (
     <footer className="footer">
-      <div className="container footer__container">
+      <div className="container footer__bottom">
         <a href="#hero" className="footer__logo">
           <span>ET</span>
           <small>
