@@ -189,6 +189,13 @@
   }
 
   .lang {
-    display: none;
+    display: flex;
+    gap: 5px;
+  }
+
+  .lang button {
+    width: 34px;
+    height: 34px;
+    font-size: 12px;
   }
 }

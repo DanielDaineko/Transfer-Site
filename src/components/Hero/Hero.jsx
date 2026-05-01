@@ -11,7 +11,7 @@ function Hero() {
   const { t } = useTranslation();
 
   return (
-    <section id="hero" className="hero">
+    <section id="hero" className="hero reveal">
       <div className="hero__bg"></div>
       <div className="hero__overlay"></div>
 
@@ -19,7 +19,7 @@ function Hero() {
         <div className="hero__content">
           <p className="hero__subtitle">{t("hero.subtitle")}</p>
 
-          <h1>
+          <h1 className="hero__title">
             {t("hero.title1")}
             <br />
             {t("hero.title2")}
@@ -28,18 +28,14 @@ function Hero() {
           </h1>
 
           <p className="hero__text">{t("hero.text")}</p>
+        </div>
 
-          <div className="hero__buttons">
-            <a href="#contacts" className="btn btn--gold">
-              <FaPhoneAlt />
-              {t("hero.book")}
-            </a>
-
-            <a href="#routes" className="btn btn--dark">
-              {t("hero.routes")}
-              <FaArrowRight />
-            </a>
-          </div>
+        <div className="hero__car-wrap">
+          <img
+            src="/images/car.png"
+            alt="EuroTransfer car"
+            className="hero__car"
+          />
         </div>
       </div>
     </section>

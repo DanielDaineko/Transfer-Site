@@ -1,5 +1,13 @@
 import "./Routes.css";
-import { FaClock, FaRoad, FaEuroSign, FaArrowRight } from "react-icons/fa";
+import {
+  FaClock,
+  FaRoad,
+  FaEuroSign,
+  FaArrowRight,
+  FaMapMarkerAlt,
+  FaCar,
+  FaCrown,
+} from "react-icons/fa";
 import { routesData } from "../../data/routesData";
 import { useTranslation } from "react-i18next";
 
@@ -14,9 +22,10 @@ function Routes() {
 
         <div className="routes__grid">
           {routesData.map((route, index) => (
-            <article className="route-card reveal" key={index}>
+            <a href="#contacts" className="route-card reveal" key={index}>
               <div>
-                <h3>
+                <h3 className="route-card__title">
+                  <FaMapMarkerAlt />
                   {t(route.fromKey)} — {t(route.toKey)}
                 </h3>
 
@@ -38,11 +47,11 @@ function Routes() {
                 </p>
               </div>
 
-              <div className="route-card__map">
-                <span></span>
+              <div className="route-card__action">
+                {route.type === "vip" ? <FaCrown /> : <FaCar />}
                 <FaArrowRight />
               </div>
-            </article>
+            </a>
           ))}
         </div>
       </div>
