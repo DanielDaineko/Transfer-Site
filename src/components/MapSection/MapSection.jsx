@@ -40,14 +40,28 @@ function MapSection() {
         <div id="contacts" className="contact-card">
           <h2>{t("contacts.title")}</h2>
 
-          <a href="tel:+37258141777">
+          {/* Русский номер */}
+          <a href="tel:+37258141777" className="contact-item">
             <FaPhoneAlt />
-            +372 5814 1777
+            <div>
+              <span>+372 5814 1777</span>
+              <small>Русский язык</small>
+            </div>
           </a>
 
-          <a href="mailto:info@estoniatransfer.ee">
+          {/* Английский + Эстонский */}
+          <a href="tel:+37256227666" className="contact-item">
+            <FaPhoneAlt />
+            <div>
+              <span>+372 5622 7666</span>
+              <small>English / Eesti</small>
+            </div>
+          </a>
+
+          {/* Почта */}
+          <a href="mailto:Info@eurotransfer.ee" className="contact-item">
             <FaEnvelope />
-            info@estoniatransfer.ee
+            <span>Info@eurotransfer.ee</span>
           </a>
 
           <div className="contact-card__buttons">
@@ -60,11 +74,7 @@ function MapSection() {
               WhatsApp
             </a>
 
-            <a
-              href="https://t.me/your_telegram_username"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://t.me/Semkopli82" target="_blank" rel="noreferrer">
               <FaTelegramPlane />
               Telegram
             </a>

@@ -104,6 +104,28 @@
   background: #0ea5e9;
 }
 
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 0;
+}
+
+.contact-item div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-item small {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.contact-item svg {
+  color: var(--gold);
+  min-width: 18px;
+}
+
 @media (max-width: 1100px) {
   .map-section__grid {
     grid-template-columns: 1fr;
