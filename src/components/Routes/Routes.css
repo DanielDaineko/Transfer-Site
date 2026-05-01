@@ -1,7 +1,5 @@
 .routes {
-  background:
-    radial-gradient(circle at top, rgba(214, 177, 106, 0.08), transparent 36%),
-    var(--bg);
+  background: var(--gradient-section);
 }
 
 .routes__grid {
@@ -17,18 +15,24 @@
   gap: 24px;
   padding: 26px;
   border-radius: var(--radius);
-  border: 1px solid var(--border);
-  background: linear-gradient(
-    145deg,
-    rgba(255, 255, 255, 0.055),
-    rgba(255, 255, 255, 0.015)
-  );
-  box-shadow: var(--shadow);
+  border: 1px solid var(--gold-border);
+  background: var(--gradient-card);
+  box-shadow: var(--shadow-soft);
+  transition: 0.25s ease;
+}
+
+.route-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--gold);
+  box-shadow:
+    var(--shadow),
+    0 0 28px rgba(214, 177, 106, 0.12);
 }
 
 .route-card h3 {
   font-size: 24px;
   margin-bottom: 18px;
+  color: var(--text);
 }
 
 .route-card__meta {
@@ -82,5 +86,9 @@
 
   .route-card__map {
     display: none;
+  }
+
+  .route-card__meta {
+    flex-wrap: wrap;
   }
 }

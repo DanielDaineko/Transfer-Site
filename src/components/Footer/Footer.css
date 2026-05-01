@@ -1,9 +1,7 @@
 .footer {
   padding: 22px 20px;
-  border-top: 1px solid var(--border);
-  background:
-    radial-gradient(circle at top, rgba(214, 177, 106, 0.08), transparent 36%),
-    var(--bg);
+  border-top: 1px solid var(--gold-border);
+  background: linear-gradient(180deg, #141a22 0%, #11161d 100%);
 }
 
 .footer__bottom {
@@ -40,7 +38,7 @@
 
 .footer__company {
   color: var(--gold);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 @media (max-width: 700px) {

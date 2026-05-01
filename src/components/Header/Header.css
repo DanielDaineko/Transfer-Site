@@ -12,12 +12,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid var(--border);
+  gap: 22px;
+  border: 1px solid var(--gold-border);
   border-radius: 18px;
-  background:
-    radial-gradient(circle at top, rgba(214, 177, 106, 0.08), transparent 36%),
-    var(--bg);
-  backdrop-filter: blur(16px);
+  background: rgba(22, 28, 36, 0.78);
+  backdrop-filter: blur(18px);
+  box-shadow: var(--shadow-soft);
 }
 
 .logo {
@@ -37,16 +37,19 @@
   font-family: Georgia, serif;
   font-size: 15px;
   line-height: 1.05;
+  color: var(--text);
 }
 
 .nav {
   display: flex;
+  align-items: center;
   gap: 30px;
 }
 
 .nav a {
   color: var(--muted);
-  font-weight: 500;
+  font-weight: 600;
+  transition: 0.25s ease;
 }
 
 .nav a:hover {
@@ -69,13 +72,16 @@
   height: 38px;
   border-radius: 10px;
   border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.03);
-  color: white;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
   cursor: pointer;
+  transition: 0.25s ease;
 }
 
 .lang button:hover {
   color: var(--gold);
+  border-color: var(--gold-border);
+  background: var(--gold-soft);
 }
 
 .header__phone {
@@ -84,9 +90,16 @@
   gap: 10px;
   padding: 12px 18px;
   border-radius: 12px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--gold-border);
   color: var(--gold);
-  font-weight: 700;
+  font-weight: 800;
+  background: rgba(255, 255, 255, 0.035);
+  transition: 0.25s ease;
+}
+
+.header__phone:hover {
+  background: var(--gold-soft);
+  transform: translateY(-2px);
 }
 
 .burger {
@@ -94,25 +107,44 @@
 }
 
 @media (max-width: 980px) {
+  .header {
+    top: 12px;
+  }
+
+  .header__container {
+    min-height: 64px;
+    padding: 0 16px;
+  }
+
   .nav {
     position: fixed;
-    top: 88px;
+    top: 82px;
     left: 20px;
     right: 20px;
     flex-direction: column;
-    padding: 24px;
+    align-items: stretch;
+    gap: 0;
+    padding: 22px;
     border-radius: 18px;
-    background: rgba(5, 8, 15, 0.96);
+    border: 1px solid var(--gold-border);
+    background: rgba(22, 28, 36, 0.96);
+    backdrop-filter: blur(18px);
+    box-shadow: var(--shadow);
     transform: translateY(-130%);
     opacity: 0;
     pointer-events: none;
-    transition: 0.3s;
+    transition: 0.3s ease;
   }
 
   .nav--open {
     transform: translateY(0);
     opacity: 1;
     pointer-events: auto;
+  }
+
+  .nav a {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
   }
 
   .header__phone {
@@ -126,7 +158,16 @@
     height: 42px;
     border: 1px solid var(--border);
     border-radius: 12px;
-    background: transparent;
-    color: white;
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--text);
+    cursor: pointer;
+  }
+
+  .logo__letters {
+    font-size: 34px;
+  }
+
+  .logo__text {
+    font-size: 12px;
   }
 }
