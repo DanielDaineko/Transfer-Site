@@ -1,12 +1,16 @@
 :root {
-  --bg: #05080f;
-  --bg-soft: #0b111c;
-  --card: rgba(11, 17, 28, 0.82);
+  --bg: #0d1117; /* графит */
+  --bg-soft: #111827; /* чуть светлее */
+  --card: rgba(17, 24, 39, 0.85);
+
   --gold: #d6b16a;
   --gold-dark: #9c783c;
+
   --text: #f8fafc;
-  --muted: #b7c0d0;
-  --border: rgba(214, 177, 106, 0.28);
+  --muted: #aeb8c9;
+
+  --border: rgba(214, 177, 106, 0.25);
+
   --container: 1240px;
   --radius: 18px;
   --shadow: 0 24px 70px rgba(0, 0, 0, 0.45);

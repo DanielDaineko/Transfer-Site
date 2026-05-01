@@ -1,7 +1,7 @@
 .footer {
   padding: 34px 20px;
   border-top: 1px solid var(--border);
-  background: #05080f;
+  background: var(--bg);
 }
 
 .footer__container {
@@ -29,4 +29,17 @@
     gap: 16px;
     text-align: center;
   }
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.footer__company {
+  color: var(--gold);
+  font-weight: 500;
 }

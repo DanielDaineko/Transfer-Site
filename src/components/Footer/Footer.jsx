@@ -13,7 +13,11 @@ function Footer() {
           </small>
         </a>
 
-        <p>© 2026 EuroTransfer. Все права защищены.</p>
+        <div className="footer__info">
+          <p>© 2026 EuroTransfer</p>
+          <p>Все права защищены</p>
+          <p className="footer__company">Aletakso OÜ | Рег. код: 12345678</p>
+        </div>
       </div>
     </footer>
   );

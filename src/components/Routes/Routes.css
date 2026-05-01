@@ -1,5 +1,5 @@
 .routes {
-  background: #05080f;
+  background: var(--bg);
 }
 
 .routes__grid {

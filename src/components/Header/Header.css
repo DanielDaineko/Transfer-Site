@@ -14,7 +14,7 @@
   justify-content: space-between;
   border: 1px solid var(--border);
   border-radius: 18px;
-  background: rgba(5, 8, 15, 0.72);
+  background: var(--bg);
   backdrop-filter: blur(16px);
 }
 
