@@ -32,22 +32,6 @@ export const routesData = [
     type: "car",
   },
   {
-    fromKey: "routesData.cityRide",
-    toKey: "routesData.thirtyMinutes",
-    timeKey: "routesData.thirtyMinutes",
-    distanceKey: "routesData.cityService",
-    price: "15€",
-    type: "car",
-  },
-  {
-    fromKey: "routesData.cityRide",
-    toKey: "routesData.oneHour",
-    timeKey: "routesData.oneHour",
-    distanceKey: "routesData.cityService",
-    price: "30€",
-    type: "car",
-  },
-  {
     fromKey: "routesData.driverBooking",
     toKey: "routesData.twelveHours",
     timeKey: "routesData.twelveHours",
