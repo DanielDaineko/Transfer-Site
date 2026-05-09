@@ -107,11 +107,10 @@
   position: relative;
   z-index: 2;
   width: 100%;
-  max-width: 720px;
+  max-width: 650px;
   object-fit: contain;
 
-  /* 🔥 главное изменение */
-  transform: translateY(-20px) translateX(30px);
+  transform: translate(90px, 55px);
 }
 .hero__bg {
   z-index: 0;
@@ -124,8 +123,8 @@
 /* планшеты */
 @media (max-width: 1180px) {
   .hero__car {
-    max-width: 560px;
-    transform: translate(55px, 74px);
+    max-width: 540px;
+    transform: translate(70px, 60px);
   }
 }
 

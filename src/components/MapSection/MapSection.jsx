@@ -62,7 +62,7 @@ function MapSection() {
           <a href="mailto:Info@eurotransfer.ee" className="contact-item">
             <FaEnvelope />
             <div>
-              <span>Info@eurotransfer.ee</span>
+              <span>Eurotransfer@mail.ee</span>
               <small>{t("contacts.email")}</small>
             </div>
           </a>
