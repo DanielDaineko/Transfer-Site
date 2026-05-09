@@ -12,6 +12,9 @@ function Hero() {
 
   return (
     <section id="hero" className="hero reveal">
+      <div className="hero__top-logo">
+        <img src="/images/et-logo.png" alt="EuroTransfer logo" />
+      </div>
       <div className="hero__bg"></div>
       <div className="hero__overlay"></div>
 
